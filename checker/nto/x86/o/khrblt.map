@@ -1,0 +1,714 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+width               0x4               gldebug.o
+row_pointers        0x4               gldebug.o
+color_type          0x1               gldebug.o
+bit_depth           0x1               gldebug.o
+height              0x4               gldebug.o
+screen_ctx          0x4               main.o
+number_of_passes    0x4               gldebug.o
+egl_ctx             0x44              main.o
+
+Discarded input sections
+
+ .group         0x0000000000000000        0x8 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtbegin.o
+ .group         0x0000000000000000        0x8 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtend.o
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtend.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+TARGET(elf32-i386)
+LOAD /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+LOAD /Developer/SDKs/qnx660/target/qnx6/x86/lib/crti.o
+LOAD /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtbegin.o
+LOAD convert.o
+LOAD egl.o
+LOAD gldebug.o
+LOAD main.o
+LOAD uyvy.o
+LOAD win.o
+LOAD yuv-test.o
+LOAD yuvbuf.o
+LOAD /Users/leoxu/stage/qnx660/mainline/x86/usr/lib/libscreen.so
+LOAD /Users/leoxu/stage/qnx660/mainline/x86/usr/lib/libEGL.so
+LOAD /Users/leoxu/stage/qnx660/mainline/x86/usr/lib/libGLESv2.so
+LOAD /Users/leoxu/stage/qnx660/mainline/x86/usr/lib/libpng.so
+LOAD /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/libgcc.a
+LOAD /Developer/SDKs/qnx660/target/qnx6/x86/lib/libc.so
+LOAD /Developer/SDKs/qnx660/target/qnx6/x86/lib/libc.a
+LOAD /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/libgcc.a
+LOAD /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtend.o
+LOAD /Developer/SDKs/qnx660/target/qnx6/x86/lib/crtn.o
+                0x0000000008048000                PROVIDE (__executable_start, 0x8048000)
+                0x0000000008048154                . = (0x8048000 + SIZEOF_HEADERS)
+
+.interp         0x0000000008048154       0x14
+ *(.interp)
+ .interp        0x0000000008048154       0x14 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+
+.note           0x0000000008048168       0x18
+ .note          0x0000000008048168       0x18 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crtn.o
+
+.note.gnu.build-id
+                0x0000000008048180       0x20
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000008048180       0x20 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+
+.hash
+ *(.hash)
+
+.gnu.hash       0x00000000080481a0       0x5c
+ *(.gnu.hash)
+ .gnu.hash      0x00000000080481a0       0x5c /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+
+.dynsym         0x00000000080481fc      0x7e0
+ *(.dynsym)
+ .dynsym        0x00000000080481fc      0x7e0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+
+.dynstr         0x00000000080489dc      0x7bd
+ *(.dynstr)
+ .dynstr        0x00000000080489dc      0x7bd /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+
+.gnu.version    0x000000000804919a        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000000000        0x0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+
+.gnu.version_d  0x000000000804919c        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000000000        0x0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+
+.gnu.version_r  0x000000000804919c        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000000000        0x0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+
+.rel.dyn        0x000000000804919c       0x50
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x0000000000000000        0x0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x000000000804919c       0x30 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ .rel.bss       0x00000000080491cc       0x20 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+                0x00000000080491ec                PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x0000000000000000        0x0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+                0x00000000080491ec                PROVIDE (__rel_iplt_end, .)
+                0x00000000080491ec                PROVIDE (__rela_iplt_start, .)
+                0x00000000080491ec                PROVIDE (__rela_iplt_end, .)
+
+.rel.plt        0x00000000080491ec      0x378
+ *(.rel.plt)
+ .rel.plt       0x00000000080491ec      0x378 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+
+.init           0x0000000008049564        0xd
+ *(SORT(.init))
+ .init          0x0000000008049564        0x0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crti.o
+                0x0000000008049564                _init
+ .init          0x0000000008049564        0x5 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtbegin.o
+ .init          0x0000000008049569        0x5 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtend.o
+ .init          0x000000000804956e        0x3 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crtn.o
+
+.plt            0x0000000008049580      0x700
+ *(.plt)
+ .plt           0x0000000008049580      0x700 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+                0x0000000008049590                png_init_io
+                0x00000000080495a0                glGetShaderiv
+                0x00000000080495b0                glGenTextures
+                0x00000000080495c0                screen_flush_blits
+                0x00000000080495d0                glGetUniformLocation
+                0x00000000080495e0                glVertexAttribPointer
+                0x00000000080495f0                eglDestroySurface
+                0x0000000008049600                glBindTexture
+                0x0000000008049610                screen_get_display_property_iv
+                0x0000000008049620                glEnableVertexAttribArray
+                0x0000000008049640                glCompileShader
+                0x0000000008049650                strcmp
+                0x0000000008049660                png_create_write_struct
+                0x0000000008049670                screen_set_window_property_iv
+                0x0000000008049680                glCreateProgram
+                0x0000000008049690                screen_post_window
+                0x00000000080496a0                memset
+                0x00000000080496b0                png_write_image
+                0x00000000080496c0                screen_get_buffer_property_pv
+                0x00000000080496d0                _init_array
+                0x00000000080496e0                png_create_info_struct
+                0x00000000080496f0                eglGetConfigAttrib
+                0x0000000008049700                png_write_info
+                0x0000000008049710                malloc
+                0x0000000008049720                glUniform2f
+                0x0000000008049730                png_set_bKGD
+                0x0000000008049740                screen_get_context_property_iv
+                0x0000000008049750                fflush
+                0x0000000008049760                strncmp
+                0x0000000008049770                screen_get_event_property_iv
+                0x0000000008049780                glCreateShader
+                0x0000000008049790                clock_gettime
+                0x00000000080497a0                glDeleteShader
+                0x00000000080497b0                png_write_end
+                0x00000000080497c0                fclose
+                0x00000000080497d0                open
+                0x00000000080497e0                screen_destroy_event
+                0x00000000080497f0                eglCreateContext
+                0x0000000008049800                glActiveTexture
+                0x0000000008049810                glTexParameterf
+                0x0000000008049820                screen_destroy_window
+                0x0000000008049830                screen_get_event
+                0x0000000008049840                perror
+                0x0000000008049850                screen_get_context_property_pv
+                0x0000000008049860                _preinit_array
+                0x0000000008049870                screen_blit
+                0x0000000008049880                glShaderSource
+                0x0000000008049890                screen_set_window_property_pv
+                0x00000000080498a0                _init_libc
+                0x00000000080498b0                printf
+                0x00000000080498c0                eglSwapBuffers
+                0x00000000080498d0                glUniform1i
+                0x00000000080498e0                fwrite
+                0x00000000080498f0                screen_create_pixmap_buffer
+                0x0000000008049900                glReadPixels
+                0x0000000008049910                eglCreateWindowSurface
+                0x0000000008049920                __sigjmp_prolog
+                0x0000000008049930                glBindAttribLocation
+                0x0000000008049940                screen_destroy_pixmap
+                0x0000000008049950                __cxa_finalize
+                0x0000000008049970                eglDestroyContext
+                0x0000000008049980                exit
+                0x0000000008049990                fprintf
+                0x00000000080499a0                eglGetProcAddress
+                0x00000000080499b0                screen_get_buffer_property_iv
+                0x00000000080499c0                screen_create_pixmap
+                0x00000000080499d0                glDrawArrays
+                0x00000000080499e0                __get_errno_ptr
+                0x00000000080499f0                glClear
+                0x0000000008049a00                close
+                0x0000000008049a10                screen_get_window_property_pv
+                0x0000000008049a20                glTexImage2D
+                0x0000000008049a30                calloc
+                0x0000000008049a40                eglSwapInterval
+                0x0000000008049a50                eglGetError
+                0x0000000008049a60                glClearColor
+                0x0000000008049a70                read
+                0x0000000008049a80                screen_set_window_property_cv
+                0x0000000008049a90                png_set_longjmp_fn
+                0x0000000008049aa0                screen_create_window_buffers
+                0x0000000008049ab0                eglInitialize
+                0x0000000008049ac0                _fini_array
+                0x0000000008049ad0                screen_create_window
+                0x0000000008049ae0                __assert
+                0x0000000008049af0                eglGetDisplay
+                0x0000000008049b00                atexit
+                0x0000000008049b10                glGetProgramiv
+                0x0000000008049b20                glGetError
+                0x0000000008049b30                free
+                0x0000000008049b40                eglMakeCurrent
+                0x0000000008049b50                screen_destroy_context
+                0x0000000008049b60                atoi
+                0x0000000008049b70                _setjmp
+                0x0000000008049b80                screen_create_context
+                0x0000000008049b90                eglGetConfigs
+                0x0000000008049ba0                fopen
+                0x0000000008049bb0                longjmp
+                0x0000000008049bc0                glUseProgram
+                0x0000000008049bd0                screen_set_pixmap_property_iv
+                0x0000000008049be0                memcpy
+                0x0000000008049bf0                screen_get_window_property_iv
+                0x0000000008049c00                strlen
+                0x0000000008049c10                screen_create_event
+                0x0000000008049c20                png_set_IHDR
+                0x0000000008049c30                __stack_chk_fail
+                0x0000000008049c40                glLinkProgram
+                0x0000000008049c50                glAttachShader
+                0x0000000008049c60                screen_get_pixmap_property_pv
+                0x0000000008049c70                strcasecmp
+
+.iplt           0x0000000008049c80        0x0
+ *(.iplt)
+ .iplt          0x0000000000000000        0x0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+
+.text           0x0000000008049c80     0x63c0
+                0x0000000008049c80                _btext = .
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000008049c80       0xa0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+                0x0000000008049c88                _start
+ .text          0x0000000008049d20        0x0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crti.o
+ .text          0x0000000008049d20      0x18d /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtbegin.o
+ .text.__x86.get_pc_thunk.bx
+                0x0000000008049ead        0x4 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtbegin.o
+                0x0000000008049ead                __x86.get_pc_thunk.bx
+ .text          0x0000000008049eb1      0xe28 convert.o
+                0x000000000804a062                rgb888_to_ayuv
+                0x000000000804a142                rgb888_to_nv12
+                0x000000000804a482                rgb888_to_uyvy
+                0x000000000804a60f                rgb888_to_yuy2
+                0x000000000804a79a                rgb888_to_yvyu
+                0x000000000804a925                fill_ayuv
+                0x000000000804a9df                fill_nv12
+                0x000000000804aab4                fill_uyvy
+                0x000000000804ab6b                fill_yuy2
+                0x000000000804ac22                fill_yvyu
+ .text          0x000000000804acd9      0xb0a egl.o
+                0x000000000804ae29                egl_perror
+                0x000000000804b296                egl_default
+                0x000000000804b2fe                egl_init
+                0x000000000804b4fa                egl_fini
+                0x000000000804b590                egl_make_current
+                0x000000000804b628                egl_swapbuffers
+                0x000000000804b697                egl_img_init
+                0x000000000804b768                egl_img_fini
+ .text          0x000000000804b7e3      0x5c1 gldebug.o
+                0x000000000804bb74                glDebugBufferDump
+                0x000000000804bd08                glDebugGenTextureChecker
+ .text          0x000000000804bda4      0x2b3 main.o
+                0x000000000804bda4                main
+ .text          0x000000000804c057      0xbff uyvy.o
+                0x000000000804c43f                render_blit
+                0x000000000804c54f                render
+                0x000000000804c6d8                yuv_init
+ .text          0x000000000804cc56      0x82c win.o
+                0x000000000804cc56                win_default
+                0x000000000804ccaa                win_init
+                0x000000000804d02d                win_fini
+                0x000000000804d0da                win_loop
+ .text          0x000000000804d482     0x25bf yuv-test.o
+                0x000000000804d5dd                main3
+ .text          0x000000000804fa41      0x5b1 yuvbuf.o
+                0x000000000804fcc7                create_yuv_pixmap
+ *fill*         0x000000000804fff2        0xe 9090
+ .text          0x0000000008050000       0x40 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtend.o
+ .text          0x0000000008050040        0x0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crtn.o
+ *(.gnu.warning)
+
+.fini           0x0000000008050040        0x8
+ *(SORT(.fini))
+ .fini          0x0000000008050040        0x0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crti.o
+                0x0000000008050040                _fini
+ .fini          0x0000000008050040        0x5 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtbegin.o
+ .fini          0x0000000008050045        0x3 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crtn.o
+                0x0000000008050048                PROVIDE (__etext, .)
+                0x0000000008050048                PROVIDE (_etext, .)
+                0x0000000008050048                PROVIDE (etext, .)
+
+.rodata         0x0000000008050060   0x2afbc4
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000008050060      0x4ea egl.o
+ .rodata        0x000000000805054a        0xa gldebug.o
+ .rodata        0x0000000008050554       0xe8 main.o
+ .rodata        0x000000000805063c      0x610 uyvy.o
+ *fill*         0x0000000008050c4c        0x4 
+ .rodata        0x0000000008050c50      0x1d0 win.o
+ .rodata        0x0000000008050e20   0x157bc0 yuv-test.o
+ .rodata        0x00000000081a89e0   0x157244 yuvbuf.o
+
+.rodata1
+ *(.rodata1)
+
+.sdata2
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+
+.sbss2
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+
+.eh_frame_hdr   0x00000000082ffc24      0x1a4
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00000000082ffc24      0x1a4 convert.o
+
+.eh_frame       0x00000000082ffdc8      0x6f8
+ *(.eh_frame)
+ .eh_frame      0x00000000082ffdc8       0x3c /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x00000000082ffe04        0x0 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtbegin.o
+ .eh_frame      0x00000000082ffe04      0x1e0 convert.o
+                                        0x1f8 (size before relaxing)
+ .eh_frame      0x00000000082fffe4      0x1b0 egl.o
+                                        0x1c8 (size before relaxing)
+ .eh_frame      0x0000000008300194       0x80 gldebug.o
+                                         0x98 (size before relaxing)
+ .eh_frame      0x0000000008300214       0x20 main.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000008300234       0xe0 uyvy.o
+                                         0xf8 (size before relaxing)
+ .eh_frame      0x0000000008300314       0x98 win.o
+                                         0xb0 (size before relaxing)
+ .eh_frame      0x00000000083003ac       0x50 yuv-test.o
+                                         0x68 (size before relaxing)
+ .eh_frame      0x00000000083003fc       0xc0 yuvbuf.o
+                                         0xd8 (size before relaxing)
+ .eh_frame      0x00000000083004bc        0x4 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtend.o
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x00000000083004c0                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x0000000008301f1c                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000008301f1c        0x0
+                0x0000000008301f1c                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x0000000008301f1c                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0000000008301f1c        0x0
+                0x0000000008301f1c                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x0000000008301f1c                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0000000008301f1c        0x0
+                0x0000000008301f1c                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+                0x0000000008301f1c                PROVIDE (__fini_array_end, .)
+
+.ctors          0x0000000008301f1c        0x8
+ *crtbegin.o(.ctors)
+ .ctors         0x0000000008301f1c        0x4 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtbegin.o
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x0000000008301f20        0x4 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtend.o
+
+.dtors          0x0000000008301f24        0x8
+ *crtbegin.o(.dtors)
+ .dtors         0x0000000008301f24        0x4 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtbegin.o
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x0000000008301f28        0x4 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtend.o
+                0x0000000008301f28                __DTOR_END__
+
+.jcr            0x0000000008301f2c        0x4
+ *(.jcr)
+ .jcr           0x0000000008301f2c        0x0 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtbegin.o
+ .jcr           0x0000000008301f2c        0x4 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtend.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x0000000008301f30       0xd0
+ *(.dynamic)
+ .dynamic       0x0000000008301f30       0xd0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+                0x0000000008301f30                _DYNAMIC
+                0x0000000008302000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.data           0x0000000008302000      0x100
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000008302000        0x0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+ .data          0x0000000008302000        0x0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crti.o
+ .data          0x0000000008302000        0x0 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtbegin.o
+ .data.rel      0x0000000008302000        0x4 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtbegin.o
+                0x0000000008302000                __dso_handle
+ .data          0x0000000008302004        0x0 convert.o
+ *fill*         0x0000000008302004       0x1c 
+ .data          0x0000000008302020       0x3c egl.o
+ .data          0x000000000830205c        0x0 gldebug.o
+ .data          0x000000000830205c        0x0 main.o
+ *fill*         0x000000000830205c        0x4 
+ .data          0x0000000008302060       0xa0 uyvy.o
+                0x00000000083020c0                vb_right
+ .data          0x0000000008302100        0x0 win.o
+ .data          0x0000000008302100        0x0 yuv-test.o
+ .data          0x0000000008302100        0x0 yuvbuf.o
+ .data          0x0000000008302100        0x0 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtend.o
+ .data          0x0000000008302100        0x0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crtn.o
+
+.tm_clone_table
+                0x0000000008302100        0x0
+ .tm_clone_table
+                0x0000000008302100        0x0 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtbegin.o
+ .tm_clone_table
+                0x0000000008302100        0x0 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtend.o
+
+.data1
+ *(.data1)
+
+.got            0x0000000008302100      0x1e0
+ *(.got.plt)
+ .got.plt       0x0000000008302100      0x1c8 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+                0x0000000008302100                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000000000        0x0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+ *(.got)
+ .got           0x00000000083022c8       0x18 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+ *(.igot)
+
+.sdata
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+                0x00000000083022e0                _edata = .
+                0x00000000083022e0                PROVIDE (edata, .)
+                0x00000000083022e0                . = .
+                0x00000000083022e0                __bss_start = .
+
+.sbss
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ *(.scommon)
+
+.bss            0x00000000083022e0    0x10224
+ *(.dynbss)
+ .dynbss        0x00000000083022e0       0xd0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+                0x00000000083022e0                _Ctype
+                0x0000000008302300                _Stderr
+                0x0000000008302350                __stack_chk_guard
+                0x0000000008302360                _Stdout
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00000000083023b0        0x0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crt1.o
+ .bss           0x00000000083023b0        0x0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crti.o
+ .bss           0x00000000083023b0       0x20 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtbegin.o
+ .bss           0x00000000083023d0        0x0 convert.o
+ .bss           0x00000000083023d0        0x0 egl.o
+ *fill*         0x00000000083023d0       0x10 
+ .bss           0x00000000083023e0    0x10000 gldebug.o
+ .bss           0x00000000083123e0       0x3c main.o
+ .bss           0x000000000831241c       0x40 uyvy.o
+ .bss           0x000000000831245c        0x0 win.o
+ *fill*         0x000000000831245c        0x4 
+ .bss           0x0000000008312460       0x10 yuv-test.o
+ .bss           0x0000000008312470        0x0 yuvbuf.o
+ .bss           0x0000000008312470        0x0 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtend.o
+ .bss           0x0000000008312470        0x0 /Developer/SDKs/qnx660/target/qnx6/x86/lib/crtn.o
+ *(COMMON)
+ COMMON         0x0000000008312470       0x14 gldebug.o
+                0x0000000008312470                width
+                0x0000000008312474                row_pointers
+                0x0000000008312478                color_type
+                0x0000000008312479                bit_depth
+                0x000000000831247c                height
+                0x0000000008312480                number_of_passes
+ *fill*         0x0000000008312484       0x1c 
+ COMMON         0x00000000083124a0       0x64 main.o
+                0x00000000083124a0                screen_ctx
+                0x00000000083124c0                egl_ctx
+                0x0000000008312504                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0000000008312504                . = ALIGN (0x4)
+                0x0000000008312504                . = SEGMENT_START ("ldata-segment", .)
+                0x0000000008312504                . = ALIGN (0x4)
+                0x0000000008312504                _end = .
+                0x0000000008312504                PROVIDE (end, .)
+                0x0000000008312504                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x11
+ *(.comment)
+ .comment       0x0000000000000000       0x11 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtbegin.o
+                                         0x12 (size before relaxing)
+ .comment       0x0000000000000000       0x12 convert.o
+ .comment       0x0000000000000000       0x12 egl.o
+ .comment       0x0000000000000000       0x12 gldebug.o
+ .comment       0x0000000000000000       0x12 main.o
+ .comment       0x0000000000000000       0x12 uyvy.o
+ .comment       0x0000000000000000       0x12 win.o
+ .comment       0x0000000000000000       0x12 yuv-test.o
+ .comment       0x0000000000000000       0x12 yuvbuf.o
+ .comment       0x0000000000000000       0x12 /Developer/SDKs/qnx660/host/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx6.6.0/4.7.3/crtend.o
+
+.ident          0x0000000000000000     0x14c6
+ .ident         0x0000000000000000      0x640 convert.o
+                                        0x95b (size before relaxing)
+ .ident         0x0000000000000640      0xaa1 egl.o
+                                       0x1c51 (size before relaxing)
+ .ident         0x00000000000010e1      0x284 gldebug.o
+                                       0x1092 (size before relaxing)
+ .ident         0x0000000000000000      0xc9e main.o
+ .ident         0x0000000000000000     0x1ab4 uyvy.o
+ .ident         0x0000000000001365      0x10d win.o
+                                       0x125c (size before relaxing)
+ .ident         0x0000000000001472       0x54 yuv-test.o
+                                       0x1503 (size before relaxing)
+ .ident         0x0000000000000000     0x1bef yuvbuf.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x100
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 convert.o
+ .debug_aranges
+                0x0000000000000020       0x20 egl.o
+ .debug_aranges
+                0x0000000000000040       0x20 gldebug.o
+ .debug_aranges
+                0x0000000000000060       0x20 main.o
+ .debug_aranges
+                0x0000000000000080       0x20 uyvy.o
+ .debug_aranges
+                0x00000000000000a0       0x20 win.o
+ .debug_aranges
+                0x00000000000000c0       0x20 yuv-test.o
+ .debug_aranges
+                0x00000000000000e0       0x20 yuvbuf.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x8e7c
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x5c0 convert.o
+ .debug_info    0x00000000000005c0     0x15de egl.o
+ .debug_info    0x0000000000001b9e     0x1aec gldebug.o
+ .debug_info    0x000000000000368a      0x703 main.o
+ .debug_info    0x0000000000003d8d     0x20f2 uyvy.o
+ .debug_info    0x0000000000005e7f      0xd03 win.o
+ .debug_info    0x0000000000006b82      0xf70 yuv-test.o
+ .debug_info    0x0000000000007af2     0x138a yuvbuf.o
+
+.debug_abbrev   0x0000000000000000      0xe5e
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0xcd convert.o
+ .debug_abbrev  0x00000000000000cd      0x284 egl.o
+ .debug_abbrev  0x0000000000000351      0x1c7 gldebug.o
+ .debug_abbrev  0x0000000000000518      0x166 main.o
+ .debug_abbrev  0x000000000000067e      0x264 uyvy.o
+ .debug_abbrev  0x00000000000008e2      0x196 win.o
+ .debug_abbrev  0x0000000000000a78      0x1d2 yuv-test.o
+ .debug_abbrev  0x0000000000000c4a      0x214 yuvbuf.o
+
+.debug_line     0x0000000000000000     0x1b6d
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000      0x304 convert.o
+ .debug_line    0x0000000000000304      0x3b0 egl.o
+ .debug_line    0x00000000000006b4      0x2bf gldebug.o
+ .debug_line    0x0000000000000973      0x292 main.o
+ .debug_line    0x0000000000000c05      0x44c uyvy.o
+ .debug_line    0x0000000000001051      0x338 win.o
+ .debug_line    0x0000000000001389      0x583 yuv-test.o
+ .debug_line    0x000000000000190c      0x261 yuvbuf.o
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x0000000000000000     0x3423
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x190 convert.o
+                                        0x1cb (size before relaxing)
+ .debug_str     0x0000000000000190     0x1578 egl.o
+                                       0x1700 (size before relaxing)
+ .debug_str     0x0000000000001708      0xdaa gldebug.o
+                                       0x108e (size before relaxing)
+ .debug_str     0x00000000000024b2       0xb8 main.o
+                                        0x477 (size before relaxing)
+ .debug_str     0x000000000000256a      0x742 uyvy.o
+                                       0x1e06 (size before relaxing)
+ .debug_str     0x0000000000002cac      0x322 win.o
+                                       0x170c (size before relaxing)
+ .debug_str     0x0000000000002fce      0x40a yuv-test.o
+                                       0x1a81 (size before relaxing)
+ .debug_str     0x00000000000033d8       0x4b yuvbuf.o
+                                       0x1893 (size before relaxing)
+
+.debug_loc      0x0000000000000000      0xaf0
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x2d8 convert.o
+ .debug_loc     0x00000000000002d8      0x2d8 egl.o
+ .debug_loc     0x00000000000005b0       0xe0 gldebug.o
+ .debug_loc     0x0000000000000690       0x38 main.o
+ .debug_loc     0x00000000000006c8      0x188 uyvy.o
+ .debug_loc     0x0000000000000850       0xe0 win.o
+ .debug_loc     0x0000000000000930       0x70 yuv-test.o
+ .debug_loc     0x00000000000009a0      0x150 yuvbuf.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(/Users/leoxu/qnx/gles-apps/khrblt/nto/x86/o/khrblt elf32-i386)

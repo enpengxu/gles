@@ -1,0 +1,8 @@
+STATE=Experimental
+INSTALLDIR=x86/usr/bin/
+INSTALLNAME=checker
+NAME=checker
+USER=leoxu
+HOST=QNXWS9716.local
+DATE=2015/02/02-13:39:25-EST
+DESCRIPTION=Composition manager tutorial

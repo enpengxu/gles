@@ -1,0 +1,4 @@
+%C - Display an embedded 790x593 YUV image
+%C -format={str} [options]
+
+Options:
